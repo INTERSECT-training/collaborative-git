@@ -11,7 +11,9 @@ FIXME: home page introduction
 
 > ## Prerequisites
 >
-> FIXME
+> - Basic understanding of git commands
+> - Experience using git independently, both locally and with GitHub or similar
+> - Students should have git installed on their computer and a GitHub account
 {: .prereq}
 
 {% include links.md %}
