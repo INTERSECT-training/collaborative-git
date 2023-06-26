@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
 teaching: 10
-exercises: 0
+exercises: 10
 questions:
 - "What are the challenges for sharing code?"
 - "How can we ensure everyone has access to the latest version?"
@@ -39,6 +39,14 @@ Before diving in, we should review some basic terminology and commands. Note tha
 
 {% comment %} Cite definitions from code refinery {% endcomment %}
 
+A note about git integrations: You may find that your IDE has git built in allowing you to use the GUI instead of running the commands we talk about here. In this lesson we are focusing on the command line git commands, since they should be universal across any system you use. After this lesson we encourage you to use what you are most comfortable with, and the commands we cover will also help you better understand the functionality of your IDE git integration.
+
+## Activity
+
+Verify that you can access your GitHub account, have git installed on your computer, and can authenticate with GitHub from your computer, either using gh auth, ssh keys, or using your preferred GUI application.
+
+In groups: have one person in your group create a repository from the provided template. Give access to the others in your group. Everyone should create a local clone with `git clone`. We will use this repository for the remainder of the exercises in this section.
+
 ## Outline
 
 - Recall challenges:
@@ -46,5 +54,9 @@ Before diving in, we should review some basic terminology and commands. Note tha
   - Keeping organized when working on a team, staying on the same page, communicating
 - Contributing document
 - Brief review of terminology
+
+## TODO
+
+- Create/find repository template to use
 
 {% include links.md %}
