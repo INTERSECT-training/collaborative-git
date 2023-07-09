@@ -12,7 +12,8 @@ keypoints:
 - "Create a new branch with the git checkout -b command, for example: git checkout -b my_branch"
 - "Change to another branch with the git checkout command, for example: git checkout my_other_branch"
 - "Merge my_branch into the current branch with with the git merge command, for example: git merge my_branch"
-- "The difference between merging and rebasing branches"
+- "Rebasing rewrites history and can sometimes be used instead of merge, where appropriate"
+- "Never rebase on a public branch"
 ---
 
 ## About Branches
@@ -98,6 +99,15 @@ git merge my_new_branch
 
 Git will do its best to complete the merge automatically. For example, if none of the changes have happened in the same lines of code, things will usually merge cleanly. If the merge can't complete automatically, this is called a merge conflict. Any conflicts in the files must be resolved before the merge can be completed.
 
+## Merge vs Rebase
+
+There is another way to introduce changes from one branch to another: rebasing. A rebase rewrites history. For example, if there are new commits on the main branch while you are working on a feature branch, you could merge those commits into your feature branch, as we describe above. This creates a new commit with two parent commits: one in your feature branch, one in the main branch. Alternatively, you can rebase your feature branch onto the new end of the main branch with `git rebase main`. Rebasing "replays" your feature branch commits onto the new commits of the main branch, as if you started your branch there.
+
+![Figure showing the process of rebasing the feature branch onto new commits in the main branch. First a graph diagram of a repository is shown with a main and feature branch. The feature branch with three commits splits off the main branch after two commits. A smiley face is on the third commit of the feature branch to show the current location. Below is an arrow with the text "git rebase main" followed by the same repository, but the feature branch now splits off the main branch at the last commit.](../fig/branches/rebase.png){:width="50%"}
+*Rebasing the feature branch onto new commits in the main branch with `git rebase main`.*
+
+Rebasing creates a cleaner history, without the extra merge commit. However, rebases never be done on public branches that others might be using or even looking at. It will result in your repository and everyone else's having different history, which can be confusing and difficult to fix. If no one else is looking at your branch, especially if you haven't published it yet, rebasing is safe.
+
 ## Activity
 
 Everyone:
@@ -107,29 +117,23 @@ Everyone:
 - Make a small change, commit, and push
 - Look at the remote repository, look at your change and your group's changes
 
-Now, one by one run the following:
+Now, **all but one** should run the following:
 
-- git pull
-- git checkout main
-- git merge branch_name
-- git push
+```bash
+git pull
+git checkout main
+git merge branch_name
+git push
+```
 
 Did anyone run into merge conflicts? How might this have been prevented?
 
-## Outline
+There should be one team member who still has an unmerged branch at the end of this exercise.
 
-- Use of branches
-  - Why use branches
-    - Allows team members to work on the code without impacting the work of other developers or users (compartmentalize)
-  - How to use branches (can point to other resources):
-    - How to create a branch and work with it
-    - How to change branches
-    - How to merge a branch
-  - Merge vs Rebase?
+## Additional Resources
 
-## TODO
-
-- Merge vs Rebase
-- Build out activity
+- [Code Refinery: Branches](https://coderefinery.github.io/git-intro/branches/)
+- [Code Refinery: Conflict Resolution](https://coderefinery.github.io/git-intro/conflicts/)
+- [Atlassian Git Tutorials: Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
 
 {% include links.md %}
