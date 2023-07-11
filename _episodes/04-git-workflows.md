@@ -73,7 +73,7 @@ git remote add upstream https://github.com/project_team/project.git
 git remote add my-fork https://github.com/me/project.git
 ```
 
-Here we are adding a remote called "upstream" for our central team repository and another called "my-fork" for our own fork. We can view our remotes with `git remote -v`. Now when you want to retrieve any changes from the upstream repository you can run `git fetch upstream`. To update your main branch with these update changes, you would merge them into your local forked repository:
+Here we are adding a remote called "upstream" for our central team repository and another called "my-fork" for our own fork. We can view our remotes with `git remote -v`. Now when you want to retrieve any changes from the upstream repository you can run `git fetch upstream`. To update your main branch with these changes, you would merge them into your local forked repository:
 
 ```bash
 git checkout main # this is the main branch for your fork that you have cloned locally
