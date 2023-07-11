@@ -8,7 +8,7 @@
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
 # incubator: Carpentries Incubator
-carpentry: "swc"
+carpentry: "intersect"
 
 # Overall title for pages.
 title: "Collaborative Git"
@@ -34,6 +34,7 @@ repository: <USERNAME>/<PROJECT>
 email: "team@carpentries.org"
 
 # Sites.
+intersect_site: "https://intersect-training.org/"
 coc: "https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html"
 amy_site: "https://amy.carpentries.org/"
 carpentries_github: "https://github.com/carpentries"
