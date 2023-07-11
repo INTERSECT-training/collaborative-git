@@ -46,8 +46,8 @@ and to meet some of our community members.
 ## Where to Contribute
 
 1.  If you wish to change this lesson,
-    please work in <https://github.com/INTERECT-training/FIXME>,
-    which can be viewed at <https://INTERSECT-training.github.io/FIXME>.
+    please work in <https://github.com/INTERSECT-training/collaborative-git>,
+    which can be viewed at <https://INTERSECT-training.github.io/collaborative-git>.
 
 2.  If you wish to change the example lesson,
     please work in <https://github.com/INTERSECT-training/intersect-module-template>,
