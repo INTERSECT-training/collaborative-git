@@ -47,16 +47,8 @@ Verify that you can access your GitHub account, have git installed on your compu
 
 In groups: have one person in your group create a repository from the provided template. Give access to the others in your group. Everyone should create a local clone with `git clone`. We will use this repository for the remainder of the exercises in this section.
 
-## Outline
-
-- Recall challenges:
-  - Sharing code in a cohesive way, everyone has access to the latest version, everyone is able to contribute equally
-  - Keeping organized when working on a team, staying on the same page, communicating
-- Contributing document
-- Brief review of terminology
-
-## TODO
-
-- Create/find repository template to use
+## Additional Resources
+- [Code Refinery: Concepts around Collaboration](https://coderefinery.github.io/git-collaborative/concepts/)
+- [Code Refinery: Introduction to Version Control](https://coderefinery.github.io/git-intro/)
 
 {% include links.md %}
