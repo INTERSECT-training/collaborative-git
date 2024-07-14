@@ -26,18 +26,18 @@ While technology helps, it is not the solution on its own. We will also discuss 
 
 Before diving in, we should review some basic terminology and commands. Note that while other options are available, we are focusing on GitHub for this lesson.
 
-- **repository**: The project, contains all data and history (commits, branches, tags).
-- **remote (repository)**: The copy of the repository on a remote server, such as GitHub. Accessible to anyone who has access to the repository on the server. Also referred to as the "central" repository.
-- **local (repository)**: A copy of the repository in another place, such as a laptop or your home directory on a cluster. Generally accessible to one person.
-- **commit**: Snapshot of the project, gets a unique identifier (e.g. c7f0e8bfc718be04525847fc7ac237f470add76e).
-- **branch**: Independent development line. The main development line is often called main or master.
-- **tag**: A pointer to one commit, to be able to refer to it later. Like a commemorative plaque that you attach to a particular commit (e.g. phd-printed or paper-submitted).
-- **cloning**: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one. This creates a local copy of the repository.
-- **forking**: Taking a copy of a repository (which is typically not yours) - your copy (fork) stays on GitHub/GitLab and you can make changes to your copy.
-- **pull**: Bring changes from a remote repository to your local repository.
-- **push**: Bring changes from your local repository to the remote repository.
+- *repository (repo)*: The project, contains all data and history (commits, branches, tags).
+- *remote (repository)*: The copy of the repository on a remote server, such as GitHub. Accessible to anyone who has access to the repository on the server. Also referred to as the "central" repository.
+- *local (repository)*: A copy of the repository in another place, such as a laptop or your home directory on a cluster. Generally accessible to one person.
+- *commit*: Snapshot of the project, gets a unique identifier (e.g. c7f0e8bfc718be04525847fc7ac237f470add76e).
+- *branch*: Independent development line. The main development line is often called main or master.
+- *tag*: A pointer to one commit, to be able to refer to it later. Like a commemorative plaque that you attach to a particular commit (e.g. phd-printed or paper-submitted).
+- *clone*: Copying the whole repository to your laptop - the first time. This creates a local copy of the repository. "Clone" as a noun refers to the local copy of the repository.
+- *fork*: Taking a copy of a repository (which is typically not yours) - your copy (fork) stays on GitHub/GitLab and you can make changes to your copy. "Fork" as a noun refers to the your forked copy of the repository.
+- *pull*: Bring changes from a remote repository to your local repository.
+- *push*: Bring changes from your local repository to the remote repository.
 
-{% comment %} Cite definitions from code refinery {% endcomment %}
+These definitions are adapted from [Code Refinery: Concepts around Collaboration](https://coderefinery.github.io/git-collaborative/concepts/).
 
 A note about git integrations: You may find that your IDE has git built in allowing you to use the GUI instead of running the commands we talk about here. In this lesson we are focusing on the command line git commands, since they should be universal across any system you use. After this lesson we encourage you to use what you are most comfortable with, and the commands we cover will also help you better understand the functionality of your IDE git integration.
 
@@ -45,18 +45,10 @@ A note about git integrations: You may find that your IDE has git built in allow
 
 Verify that you can access your GitHub account, have git installed on your computer, and can authenticate with GitHub from your computer, either using gh auth, ssh keys, or using your preferred GUI application.
 
-In groups: have one person in your group create a repository from the provided template. Give access to the others in your group. Everyone should create a local clone with `git clone`. We will use this repository for the remainder of the exercises in this section.
+Work in small groups of 3-4. Have one person in your group create a repository from the [provided template](https://github.com/INTERSECT-training/intersect-training-day2). To create a repository from the template click "Use this Template" in the top right, then "Create a New Repository". Give access to the others in your group. Everyone should accept the invitation to collaborate and then create a local clone with `git clone`. We will use this repository for the remainder of the exercises in this section.
 
-## Outline
-
-- Recall challenges:
-  - Sharing code in a cohesive way, everyone has access to the latest version, everyone is able to contribute equally
-  - Keeping organized when working on a team, staying on the same page, communicating
-- Contributing document
-- Brief review of terminology
-
-## TODO
-
-- Create/find repository template to use
+## Additional Resources
+- [Code Refinery: Concepts around Collaboration](https://coderefinery.github.io/git-collaborative/concepts/)
+- [Code Refinery: Introduction to Version Control](https://coderefinery.github.io/git-intro/)
 
 {% include links.md %}
