@@ -94,7 +94,9 @@ We will end with a quick note if your team works on shared systems, including cl
 
 ## Activity
 
-We provide a base repository to each group that each group member creates a local copy of the repository (either by forking or cloning). Students should decide which workflow to use and set up their repository accordingly. Start a contributor guide that explains the layout and rules.
+For your group's "project" that you have been working on through this lesson discuss which workflow would work best for your team. Set up the repository as needed to support this workflow. Start a contributor guide that explains the workflow and any rules for contributing.
+
+If time allows, discuss any projects that your group members work on collaboratively with others. Is there a specified workflow for this project? How would someone contribute to the project?
 
 ## Additional Resources
 
