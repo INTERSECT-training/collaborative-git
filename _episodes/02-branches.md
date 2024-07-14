@@ -33,14 +33,14 @@ Changes made in one branch can be brought into another branch with a merge. For 
 
 You can create a branch on your local clone of the repository. If didn't just clone the repository it is always good to make sure you have any recent changes to the main branch by checking out the main branch and running "git pull":
 
-```bash
+```shell
 git checkout main
 git pull
 ```
 
 Then, to create a branch we can run:
 
-```bash
+```shell
 git checkout -b my_new_branch
 ```
 
@@ -54,7 +54,7 @@ This will create the branch `my_new_branch` and move you to the new branch. If y
 
 The first time you push your branch to the remote repository, you will need to publish the branch by running run:
 
-```bash
+```shell
 git push --set-upstream origin my_new_branch
 ```
 
@@ -64,7 +64,7 @@ After this any commits can be pushed with a simple `git push`.
 
 If you need to switch to another existing branch you can use the `git checkout` command. For example, to switch back to the main branch you can run:
 
-```bash
+```shell
 git checkout main
 ```
 
@@ -77,7 +77,7 @@ Remember, if you aren't sure which branch you are on you can run `git status`. I
 
 Bring the changes from one branch into another branch by merging them. When you merge branches, changes from the specified branch are merged into the branch that you currently have checked out. For example,
 
-```bash
+```shell
 git checkout my_new_branch
 git merge main
 ```
@@ -89,7 +89,7 @@ will merge any changes introduced to `main` into the `my_new_branch`. Merging in
 
 When development is complete on `my_new_branch`, it would be merged into `main`:
 
-```bash
+```shell
 git checkout main
 git merge my_new_branch
 ```
@@ -119,7 +119,7 @@ Everyone:
 
 Now, **all but one** should run the following:
 
-```bash
+```shell
 git pull
 git checkout main
 git merge branch_name
