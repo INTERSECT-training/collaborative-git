@@ -1,6 +1,6 @@
-# FIXME Lesson title
+# Working Collaboratively
 
-This repository generates the corresponding lesson website from [INTERESECT](https://intersect-training.org/) repertoire of lessons.
+This repository generates the corresponding lesson website from [INTERSECT](https://intersect-training.org/) repertoire of lessons.
 The lesson format and structure is based off the [The Carpentries](https://carpentries.org/).
 
 ## Contributing
@@ -21,8 +21,9 @@ If you contribute to this lesson and would like to acknowledge specific funding 
 
 The contributing author(s) to this lesson are:
 
-* FIXME
-* FIXME
+* Lauren Milechin
+* Dave Rumph
+* David Bernholdt
 
 
 ## Maintainer(s)
