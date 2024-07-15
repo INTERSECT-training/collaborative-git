@@ -45,7 +45,7 @@ A note about git integrations: You may find that your IDE has git built in allow
 
 Verify that you can access your GitHub account, have git installed on your computer, and can authenticate with GitHub from your computer, either using gh auth, ssh keys, or using your preferred GUI application.
 
-Work in small groups of 3-4. Have one person in your group create a repository from the [provided template](https://github.com/INTERSECT-training/intersect-training-day2). To create a repository from the template click "Use this Template" in the top right, then "Create a New Repository". Give access to the others in your group. Everyone should accept the invitation to collaborate and then create a local clone with `git clone`. We will use this repository for the remainder of the exercises in this section.
+Work in small groups of 3-4. Have one person in your group create a repository from the [provided template](https://github.com/INTERSECT-training/intersect-training-practice). To create a repository from the template click "Use this Template" in the top right, then "Create a New Repository". Give access to the others in your group. Everyone should accept the invitation to collaborate and then create a local clone with `git clone`. We will use this repository for the remainder of the exercises in this section.
 
 ## Additional Resources
 - [Code Refinery: Concepts around Collaboration](https://coderefinery.github.io/git-collaborative/concepts/)
