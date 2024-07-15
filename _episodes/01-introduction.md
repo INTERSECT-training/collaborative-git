@@ -50,5 +50,6 @@ Work in small groups of 3-4. Have one person in your group create a repository f
 ## Additional Resources
 - [Code Refinery: Concepts around Collaboration](https://coderefinery.github.io/git-collaborative/concepts/)
 - [Code Refinery: Introduction to Version Control](https://coderefinery.github.io/git-intro/)
+- [Slide version of this lesson](https://github.com/INTERSECT-training/collaborative-git/blob/main/presentations/CollaborativeGit.pdf)
 
 {% include links.md %}

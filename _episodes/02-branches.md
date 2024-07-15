@@ -135,5 +135,6 @@ There should be one team member who still has an unmerged branch at the end of t
 - [Code Refinery: Branches](https://coderefinery.github.io/git-intro/branches/)
 - [Code Refinery: Conflict Resolution](https://coderefinery.github.io/git-intro/conflicts/)
 - [Atlassian Git Tutorials: Merging vs. Rebasing](https://www.atlassian.com/git/tutorials/merging-vs-rebasing)
+- [Slide version of this lesson](https://github.com/INTERSECT-training/collaborative-git/blob/main/presentations/CollaborativeGit.pdf)
 
 {% include links.md %}

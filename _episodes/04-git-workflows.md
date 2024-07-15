@@ -107,5 +107,6 @@ If time allows, discuss any projects that your group members work on collaborati
 - [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/)
 - [Atlassian Git Tutorial: Comparing Workflows](https://www.atlassian.com/git/tutorials/comparing-workflows)
 - [Atlassian Git Tutorial: Git Forks and Upstreams: How-to and a cool tip](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams)
+- [Slide version of this lesson](https://github.com/INTERSECT-training/collaborative-git/blob/main/presentations/CollaborativeGit.pdf)
 
 {% include links.md %}
