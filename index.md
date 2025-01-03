@@ -1,18 +1,13 @@
 ---
-layout: lesson
-root: .  # Is the only page that doesn't follow the pattern /:path/index.html
-permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
+site: sandpaper::sandpaper_site
 ---
 
-<!-- this is an html comment -->
+:::::::::::::::::::::::::::::::::::::: prereq 
 
-{% comment %} This is a comment in Liquid {% endcomment %}
+## Prerequisites
 
-> ## Prerequisites
->
-> - Basic understanding of git commands
-> - Experience using git independently, both locally and with GitHub or similar
-> - Students should have git installed on their computer and a GitHub account
-{: .prereq}
+- Basic understanding of git commands
+- Experience using git independently, both locally and with GitHub or similar
+- Students should have git installed on their computer and a GitHub account
 
-{% include links.md %}
+::::::::::::::::::::::::::::::::::::::::::::::::
