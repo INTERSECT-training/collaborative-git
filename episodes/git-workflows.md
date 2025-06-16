@@ -2,17 +2,26 @@
 title: "Git Workflows"
 teaching: 30
 exercises: 10
-questions:
-- "What is a git workflow?"
-- "Why use a git workflow"
-objectives:
-- "Know why to use a git workflow"
-- "Understand some of the most common git workflows, and when you should deviate"
-- "Be able to choose or design a workflow that meets your group's needs"
-keypoints:
-- "A git workflow describes how a team or group of contributors is to interact with a repository"
-- "Git workflows keep a team organized and on the same page by helping them understand what state the code is in"
 ---
+
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- What is a git workflow?
+- Why use a git workflow
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Know why to use a git workflow
+- Understand some of the most common git workflows, and when you should deviate
+- Be able to choose or design a workflow that meets your group's needs
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+
 
 ## Introduction
 
@@ -109,4 +118,12 @@ If time allows, discuss any projects that your group members work on collaborati
 - [Atlassian Git Tutorial: Git Forks and Upstreams: How-to and a cool tip](https://www.atlassian.com/git/tutorials/git-forks-and-upstreams)
 - [Slide version of this lesson](https://github.com/INTERSECT-training/collaborative-git/blob/main/presentations/CollaborativeGit.pdf)
 
-{% include links.md %}
+
+
+
+::::::::::::::::::::::::::::::::::::: keypoints 
+
+- A git workflow describes how a team or group of contributors is to interact with a repository
+- Git workflows keep a team organized and on the same page by helping them understand what state the code is in
+
+::::::::::::::::::::::::::::::::::::::::::::::::

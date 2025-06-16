@@ -1,5 +1,5 @@
 ---
-layout: reference
+title: 'Reference'
 ---
 
 ## Glossary
@@ -14,5 +14,3 @@ layout: reference
 - **forking**: Taking a copy of a repository (which is typically not yours) - your copy (fork) stays on GitHub/GitLab and you can make changes to your copy.
 - **pull**: Bring changes from a remote repository to your local repository.
 - **push**: Bring changes from your local repository to the remote repository.
-
-{% include links.md %}

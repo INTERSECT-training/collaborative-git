@@ -2,17 +2,24 @@
 title: "Introduction"
 teaching: 10
 exercises: 10
-questions:
-- "What are the challenges for sharing code?"
-- "How can we ensure everyone has access to the latest version?"
-- "How can we enable equal contribution?"
-objectives:
-- "Understand how git tools and processes address challenges for collaborative code development"
-keypoints:
-- "Challenges for sharing code include making sure everyone has access to the latest version, everyone can contribute equally, keeping organized, and making sure everyone has equal opportunity to contribute."
-- "Branches and pull/merge requests provide mechanisms for individuals to work on the code independently and then integrate those changes into the main codebase."
-- "Git workflows are used to stay organized and productive."
 ---
+
+:::::::::::::::::::::::::::::::::::::: questions 
+
+- What are the challenges for sharing code?
+- How can we ensure everyone has access to the latest version?
+- How can we enable equal contribution?
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: objectives
+
+- Understand how git tools and processes address challenges for collaborative code development
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
 
 You may have used git for your own projects, but how can it be used to work collaboratively on a software project?
 
@@ -52,4 +59,14 @@ Work in small groups of 3-4. Have one person in your group create a repository f
 - [Code Refinery: Introduction to Version Control](https://coderefinery.github.io/git-intro/)
 - [Slide version of this lesson](https://github.com/INTERSECT-training/collaborative-git/blob/main/presentations/CollaborativeGit.pdf)
 
-{% include links.md %}
+
+
+
+
+::::::::::::::::::::::::::::::::::::: keypoints 
+
+- Challenges for sharing code include making sure everyone has access to the latest version, everyone can contribute equally, keeping organized, and making sure everyone has equal opportunity to contribute.
+- Branches and pull/merge requests provide mechanisms for individuals to work on the code independently and then integrate those changes into the main codebase.
+- Git workflows are used to stay organized and productive.
+
+::::::::::::::::::::::::::::::::::::::::::::::::
