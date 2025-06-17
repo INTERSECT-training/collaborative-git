@@ -10,10 +10,16 @@
     <loc>https://INTERSECT-training.github.io/collaborative-git/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/collaborative-git/aio.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/collaborative-git/branches.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/collaborative-git/git-workflows.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/collaborative-git/images.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/collaborative-git/index.html</loc>
@@ -28,16 +34,28 @@
     <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/branches.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/git-workflows.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/index.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/pr.html</loc>
@@ -49,7 +67,13 @@
     <loc>https://INTERSECT-training.github.io/collaborative-git/instructor/reference.html</loc>
   </url>
   <url>
+    <loc>https://INTERSECT-training.github.io/collaborative-git/instructor-notes.html</loc>
+  </url>
+  <url>
     <loc>https://INTERSECT-training.github.io/collaborative-git/introduction.html</loc>
+  </url>
+  <url>
+    <loc>https://INTERSECT-training.github.io/collaborative-git/key-points.html</loc>
   </url>
   <url>
     <loc>https://INTERSECT-training.github.io/collaborative-git/pr.html</loc>
