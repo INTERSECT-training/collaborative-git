@@ -312,7 +312,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Branches</h1>
-        <p>Last updated on 2025-06-16 |
+        <p>Last updated on 2025-07-13 |
 
         <a href="https://github.com/INTERSECT-training/collaborative-git/edit/main/episodes/branches.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -354,13 +354,13 @@ you can likely get away with using git without creating any branches, as
 in the first diagram in the figure below. However, when you begin to
 work with others, branches allow team members to work on the code
 without impacting the work of other developers or users.</p>
-<p><img src="../fig/branches/branches.png" style="width:75.0%" alt="" class="figure"><em>These graph diagrams show repositories with different numbers of
-branches. The vertices, or circles, in these graphs show different
-commits, and each horizontal path is a branch. The first shows a
-repository with 1 main branch, the second a repository with 1 main and 1
-feature branch, and the third repository 1 main and 2 feature
-branches.</em></p>
-<p>Branches can have a few different purposes. Branches created to
+<figure><img src="../fig/branches/branches.png" style="width:75.0%" alt="Graph diagram of nodes/circles and edges/arrows representing repository state. Each horizontal path is a branch. The first shows a single path representing a repository with a single main branch, the second has two branches, a main and a feature branch, and the third has three branches, a main and two feature branches." class="figure mx-auto d-block"><div class="figcaption">These graph diagrams show repositories with
+different numbers of branches. The vertices, or circles, in these graphs
+show different commits, and each horizontal path is a branch. The first
+shows a repository with 1 main branch, the second a repository with 1
+main and 1 feature branch, and the third repository 1 main and 2 feature
+branches.</div>
+</figure><p>Branches can have a few different purposes. Branches created to
 develop a specific feature are referred to as feature branches, and are
 often short-lived. Branches can also be used for longer-term purposes,
 such as having separate development and production branches. How you
@@ -386,14 +386,14 @@ git pull</code></pre>
 to the new branch. If you run <code>git status</code> at this point it
 will display <code>On branch my_new_branch</code>. Making and committing
 any changes will only update <code>my_new_branch</code>.</p>
-<p><img src="../fig/branches/create_branch.png" style="width:75.0%" alt="" class="figure"><em>Creating a new branch. When you run
+<figure><img src="../fig/branches/create_branch.png" style="width:75.0%" alt='Figure showing the process of creating a branch. From left to right: a repository with two commits on the main branch, followed by an arrow with the text "git checkout -b my_branch" followed by the same repository with the new feature branch added. A star is used on each repository to show which commit you are on, the first has it on the second commit in the main branch, the second on the first commit of the feature branch.' class="figure mx-auto d-block"><div class="figcaption">Creating a new branch. When you run
 <code>git checkout -b my_branch</code> your new branch gets created and
 checked out, meaning you are now on your new branch (represented by the
-smiley face). Any commits you make will be on this branch until you
-checkout another one.</em></p>
-<p><img src="../fig/branches/commit_branch.png" style="width:75.0%" alt="" class="figure"><em>Every time you run the <code>git commit</code> command the
-commit will be added to your current branch.</em></p>
-<p>The first time you push your branch to the remote repository, you
+star). Any commits you make will be on this branch until you checkout
+another one.</div>
+</figure><figure><img src="../fig/branches/commit_branch.png" style="width:75.0%" alt='Figure showing creating commits on a branch. From left to right: a repository with two commits on the main branch and one on a feature branch, followed by an arrow with the text "git commit (x2)", followed by the same repository with to additional commits on the feature branch. A star is used on each diagram to show where you are in the repository, each on the last commit on the feature branch.' class="figure mx-auto d-block"><div class="figcaption">Every time you run the <code>git commit</code>
+command the commit will be added to your current branch.</div>
+</figure><p>The first time you push your branch to the remote repository, you
 will need to publish the branch by running run:</p>
 <pre class="shell"><code>git push --set-upstream origin my_new_branch</code></pre>
 <p>After this any commits can be pushed with a simple
@@ -410,9 +410,9 @@ main branch you can run:</p>
 changes to any of your files to check that you are on the right branch
 with <code>git status</code>, particularly if you haven’t touched the
 code recently.</p>
-<p><img src="../fig/branches/checkout_branch.png" style="width:85.0%" alt="" class="figure"><em>Switching branches using
-<code>git checkout</code>.</em></p>
-</div>
+<figure><img src="../fig/branches/checkout_branch.png" style="width:85.0%" alt='Figure showing The process of changing, or checking out a branch. From left to right: a repository with two commits on the main branch and three on the feature branch with current location on the third commit of the feature branch, followed by an arrow with the text "git checkout main”, followed by the same repository with the current location now on the second commit in the main branch.' class="figure mx-auto d-block"><div class="figcaption">Switching branches using
+<code>git checkout</code>.</div>
+</figure></div>
 <div class="section level3">
 <h3 id="merging-branches">Merging Branches<a class="anchor" aria-label="anchor" href="#merging-branches"></a></h3>
 <p>Bring the changes from one branch into another branch by merging
@@ -425,15 +425,15 @@ git merge main</code></pre>
 <code>my_new_branch</code>. Merging in this direction is especially
 useful when you’ve been working on <code>my_new_branch</code> for a
 while and <code>main</code> has changed in the meantime.</p>
-<p><img src="../fig/branches/merge_into_branch.png" style="width:60.0%" alt="" class="figure"><em>Merging new commits from the main branch into the feature
-branch with <code>git merge main</code>.</em></p>
-<p>When development is complete on <code>my_new_branch</code>, it would
+<figure><img src="../fig/branches/merge_into_branch.png" style="width:60.0%" alt='Figure showing the process of merging the main branch into the feature branch. On the top is a repository with a main and feature branch. The feature branch starts at the second commit on the main branch and has three commits, and the main branch has an additional two commits after the split. The current location is the third commit of the feature branch. Below is an arrow with the text "git merge main" followed by the same repository with a new arrow from the last commit on the main branch to a new commit on the feature branch, showing the changes from the main branch have been merged into the changes on the feature branch.' class="figure mx-auto d-block"><div class="figcaption">Merging new commits from the main branch into
+the feature branch with <code>git merge main</code>.</div>
+</figure><p>When development is complete on <code>my_new_branch</code>, it would
 be merged into <code>main</code>:</p>
 <pre class="shell"><code>git checkout main
 git merge my_new_branch</code></pre>
-<p><img src="../fig/branches/merge_into_main.png" style="width:50.0%" alt="" class="figure"><em>Merging new commits the feature branch into the main
-branch with <code>git merge my_branch</code>.</em></p>
-<p>Git will do its best to complete the merge automatically. For
+<figure><img src="../fig/branches/merge_into_main.png" style="width:50.0%" alt='Figure showing the process of merging the feature branch into the main branch. On the top is a repository with a main and feature branch. The feature branch starts at the second commit on the main branch and has three commits. The current location is on the second commit of the main branch. Below is an arrow with the text "git merge my_branch" followed by the same repository with a new commit on the main branch that has two incoming arrows from the main and feature branches, showing the changes from the feature branch have been merged into main branch.' class="figure mx-auto d-block"><div class="figcaption">Merging new commits the feature branch into the
+main branch with <code>git merge my_branch</code>.</div>
+</figure><p>Git will do its best to complete the merge automatically. For
 example, if none of the changes have happened in the same lines of code,
 things will usually merge cleanly. If the merge can’t complete
 automatically, this is called a merge conflict. Any conflicts in the
@@ -450,9 +450,9 @@ your feature branch onto the new end of the main branch with
 <code>git rebase main</code>. Rebasing “replays” your feature branch
 commits onto the new commits of the main branch, as if you started your
 branch there.</p>
-<p><img src="../fig/branches/rebase.png" style="width:50.0%" alt="" class="figure"><em>Rebasing the feature branch onto new commits in the main branch with
-<code>git rebase main</code>.</em></p>
-<p>Rebasing creates a cleaner history, without the extra merge commit.
+<figure><img src="../fig/branches/rebase.png" style="width:50.0%" alt='Figure showing the process of rebasing the feature branch onto new commits in the main branch. On the top is a repository with a main and feature branch. The feature branch has three commits and starts from the second commit of the main branch, which has two additinal commits after the split. The current location is on the third commit of the feature branch. Below is an arrow with the text "git rebase main" followed by the same repository, but the feature branch now splits off the fourth and last commit of the main branch.' class="figure mx-auto d-block"><div class="figcaption">Rebasing the feature branch onto new commits in
+the main branch with <code>git rebase main</code>.</div>
+</figure><p>Rebasing creates a cleaner history, without the extra merge commit.
 However, rebases never be done on public branches that others might be
 using or even looking at. It will result in your repository and everyone
 else’s having different history, which can be confusing and difficult to
@@ -565,9 +565,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://INTERSECT-training.github.io/collaborative-git/instructor/branches.html",
   "identifier": "https://INTERSECT-training.github.io/collaborative-git/instructor/branches.html",
-  "dateCreated": "2025-06-16",
-  "dateModified": "2025-06-16",
-  "datePublished": "2025-07-08"
+  "dateCreated": "2025-07-13",
+  "dateModified": "2025-07-13",
+  "datePublished": "2025-07-13"
 }
 
   </script><script>

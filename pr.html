@@ -311,7 +311,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Pull Requests</h1>
-        <p>Last updated on 2025-06-16 |
+        <p>Last updated on 2025-07-13 |
 
         <a href="https://github.com/INTERSECT-training/collaborative-git/edit/main/episodes/pr.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -375,16 +375,16 @@ the top of the page and select “New Pull Request”. From there select
 your branch under the “compare” dropdown. If you would like to merge
 your branch into a branch other than main, select that branch under the
 “base” dropdown. Then select “Create Pull Request”.</p>
-<p><img src="fig/pr/01_gotobranch.png" style="width:75.0%" alt="" class="figure"><em>Creating a Pull Request: If you recently pushed changes to your
-branch you may see a button that says “Compare and Pull Request” on
-GitHub.</em></p>
-<p>At this point you will see a form. Fill out the form with a title and
+<figure><img src="fig/pr/01_gotobranch.png" style="width:75.0%" alt='A screenshot of a repository on GitHub. A button with the text "Compare and Pull Request" is at the top fo the page.' class="figure mx-auto d-block"><div class="figcaption">Creating a Pull Request: If you recently pushed
+changes to your branch you may see a button that says “Compare and Pull
+Request” on GitHub.</div>
+</figure><p>At this point you will see a form. Fill out the form with a title and
 description for the Pull Request, and then click “Create Pull Request”.
 We will go more in depth on how to make good pull requests in a later
 section.</p>
-<p><img src="fig/pr/02_createpr.png" style="width:75.0%" alt="" class="figure"><em>Creating a Pull Request: Give your Pull Request a title and
-description.</em></p>
-</div>
+<figure><img src="fig/pr/02_createpr.png" style="width:75.0%" alt="A screenshot of a Pull Request form on GitHub.The title and description are filled out." class="figure mx-auto d-block"><div class="figcaption">Creating a Pull Request: Give your Pull Request
+a title and description.</div>
+</figure></div>
 <div class="section level3">
 <h3 id="anatomy-of-a-pull-request">Anatomy of a Pull Request<a class="anchor" aria-label="anchor" href="#anatomy-of-a-pull-request"></a></h3>
 <p>Once the Pull Request is created there are a few different tabs on
@@ -395,22 +395,24 @@ shows the result of any Continuous Integration that has been defined,
 such as automated tests (the one in the image doesn’t have any set up),
 as well as whether there are any merge conflicts for the Pull
 Request.</p>
-<p><img src="fig/pr/03_conversation.png" style="width:75.0%" alt="" class="figure"><em>The conversation tab of a Pull Request.</em></p>
-<p>At the very bottom of the page is a box where you can leave a
+<figure><img src="fig/pr/03_conversation.png" style="width:75.0%" alt="A screenshot of the conversation tab of a Pull Request." class="figure mx-auto d-block"><div class="figcaption">The conversation tab of a Pull Request.</div>
+</figure><p>At the very bottom of the page is a box where you can leave a
 comment. GitHub supports markdown so you can include formatting with
 your comment.</p>
-<p><img src="fig/pr/04_comment.png" style="width:75.0%" alt="" class="figure"><em>The conversation tab of a Pull Request. Scroll to the bottom of the
-page to leave a comment.</em></p>
-<p>There is also a tab that shows all the commits in the Pull Request
-(the Commits tab). The last Files Changed tab shows the diff between the
-base branch and the Pull Request branch. This is useful in reviewing the
-Pull Request, and it allows you to leave in-line comments. If you see a
-line of code that needs to be updated or changed, you can click the +
-next to that line to leave a comment.</p>
-<p><img src="fig/pr/04_comment.png" style="width:75.0%" alt="" class="figure"><em>The Files Changed tab of a Pull Request, showing what the proposed
-changes are for the Pull Request. You can click the + next to a line
-number to leave an in-line comment.</em></p>
-</div>
+<figure><img src="fig/pr/04_comment.png" style="width:75.0%" alt="A screenshot of the bottom of the conversation tab of a Pull Request. At the bottom of the page is a box to leave a comment." class="figure mx-auto d-block"><div class="figcaption">The conversation tab of a Pull Request. Scroll
+to the bottom of the page to leave a comment.</div>
+</figure><p>There is also a tab that shows all the commits in the Pull Request
+(the Commits tab).</p>
+<figure><img src="fig/pr/05_commits.png" style="width:75.0%" alt="A screenshot of the Commits tab of a Pull Request. The page shows the single commit in this pull request." class="figure mx-auto d-block"><div class="figcaption">The commits tab of a Pull Request.</div>
+</figure><p>The last Files Changed tab shows the diff between the base branch and
+the Pull Request branch. This is useful in reviewing the Pull Request,
+and it allows you to leave in-line comments. If you see a line of code
+that needs to be updated or changed, you can click the + next to that
+line to leave a comment.</p>
+<figure><img src="fig/pr/06_fileschanged.png" style="width:75.0%" alt="A screenshot of the Files Changed tab of a Pull Request. The page shows one line of code has been updated." class="figure mx-auto d-block"><div class="figcaption">The Files Changed tab of a Pull Request, showing
+what the proposed changes are for the Pull Request. You can click the +
+next to a line number to leave an in-line comment.</div>
+</figure></div>
 <div class="section level3">
 <h3 id="updating-a-pull-request">Updating a Pull Request<a class="anchor" aria-label="anchor" href="#updating-a-pull-request"></a></h3>
 <p>Once the Pull Request is created you and anyone with access to the
@@ -419,7 +421,9 @@ clarifying questions or requests for additional changes. If additional
 changes are needed, make those changes in your branch and push them. The
 commits will be added to the Pull Request automatically and appear on
 the main Conversation page.</p>
-</div>
+<figure><img src="fig/pr/10_updates.png" style="width:75.0%" alt="A screenshot of the Conversation tab of a pull request on GitHub. This page shows additional commits added after the pull request was created along with their commit messages in a top-to-bottom timeline." class="figure mx-auto d-block"><div class="figcaption">New commits can be seen on the Conversation
+Tab.</div>
+</figure></div>
 <div class="section level3">
 <h3 id="accepting-and-merging-a-pull-request">Accepting and Merging a Pull Request<a class="anchor" aria-label="anchor" href="#accepting-and-merging-a-pull-request"></a></h3>
 <p>Once a Pull Request has been reviewed and ready to be accepted, it
@@ -433,9 +437,10 @@ been merged. Deleting feature branches helps keep clutter down and makes
 it easier to find relevant branches. However, if you have any longer
 term branches, such as a development or production branch, you wouldn’t
 want to delete that.</p>
-<p><img src="fig/pr/07_merge.png" style="width:75.0%" alt="" class="figure"><em>After clicking the “Merge Pull Request” button on the conversation,
-click “Confirm Merge” to merge the pull request.</em></p>
-</div>
+<figure><img src="fig/pr/07_merge.png" style="width:75.0%" alt='A screenshot of the bottom of the conversation tab of a Pull Request after clicking "Merge Pull Request". There is a box with the original Pull Request title and description, with a button that says "Confirm Merge" below that.' class="figure mx-auto d-block"><div class="figcaption">After clicking the “Merge Pull Request” button
+on the conversation, click “Confirm Merge” to merge the pull
+request.</div>
+</figure></div>
 </section><section><h2 class="section-heading" id="activity">Activity<a class="anchor" aria-label="anchor" href="#activity"></a></h2>
 <hr class="half-width"><p>One team member should still have an unmerged branch from the
 previous exercise. If not, have one of you create a branch, introduce a
@@ -531,9 +536,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://INTERSECT-training.github.io/collaborative-git/pr.html",
   "identifier": "https://INTERSECT-training.github.io/collaborative-git/pr.html",
-  "dateCreated": "2025-06-16",
-  "dateModified": "2025-06-16",
-  "datePublished": "2025-07-08"
+  "dateCreated": "2025-07-13",
+  "dateModified": "2025-07-13",
+  "datePublished": "2025-07-13"
 }
 
   </script><script>

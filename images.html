@@ -346,79 +346,89 @@
 <hr class="half-width"></section><section id="branches"><h2 class="section-heading"><a href="branches.html">Branches</a></h2>
 <hr class="half-width">
 <h3 id="branches-figure-1">Figure 1</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/branches/branches.png" style="width:75.0%" alt="" class="figure"><em>These graph diagrams show repositories with different numbers of
-branches. The vertices, or circles, in these graphs show different
-commits, and each horizontal path is a branch. The first shows a
-repository with 1 main branch, the second a repository with 1 main and 1
-feature branch, and the third repository 1 main and 2 feature
-branches.</em></p>
-<hr>
+<p aria-hidden="true">Image 1 of 1: ‘Graph diagram of nodes/circles and edges/arrows representing repository state. Each horizontal path is a branch. The first shows a single path representing a repository with a single main branch, the second has two branches, a main and a feature branch, and the third has three branches, a main and two feature branches.’</p>
+<figure><img src="fig/branches/branches.png" style="width:75.0%" alt="Graph diagram of nodes/circles and edges/arrows representing repository state. Each horizontal path is a branch. The first shows a single path representing a repository with a single main branch, the second has two branches, a main and a feature branch, and the third has three branches, a main and two feature branches." class="figure mx-auto d-block"><div class="figcaption">These graph diagrams show repositories with
+different numbers of branches. The vertices, or circles, in these graphs
+show different commits, and each horizontal path is a branch. The first
+shows a repository with 1 main branch, the second a repository with 1
+main and 1 feature branch, and the third repository 1 main and 2 feature
+branches.</div>
+</figure><hr>
 <h3 id="branches-figure-2">Figure 2</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/branches/create_branch.png" style="width:75.0%" alt="" class="figure"><em>Creating a new branch. When you run
+<p aria-hidden="true">Image 1 of 1: ‘Figure showing the process of creating a branch. From left to right: a repository with two commits on the main branch, followed by an arrow with the text "git checkout -b my_branch" followed by the same repository with the new feature branch added. A star is used on each repository to show which commit you are on, the first has it on the second commit in the main branch, the second on the first commit of the feature branch.’</p>
+<figure><img src="fig/branches/create_branch.png" style="width:75.0%" alt='Figure showing the process of creating a branch. From left to right: a repository with two commits on the main branch, followed by an arrow with the text "git checkout -b my_branch" followed by the same repository with the new feature branch added. A star is used on each repository to show which commit you are on, the first has it on the second commit in the main branch, the second on the first commit of the feature branch.' class="figure mx-auto d-block"><div class="figcaption">Creating a new branch. When you run
 <code>git checkout -b my_branch</code> your new branch gets created and
 checked out, meaning you are now on your new branch (represented by the
-smiley face). Any commits you make will be on this branch until you
-checkout another one.</em></p>
-<hr>
+star). Any commits you make will be on this branch until you checkout
+another one.</div>
+</figure><hr>
 <h3 id="branches-figure-3">Figure 3</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/branches/commit_branch.png" style="width:75.0%" alt="" class="figure"><em>Every time you run the <code>git commit</code> command the
-commit will be added to your current branch.</em></p>
-<hr>
+<p aria-hidden="true">Image 1 of 1: ‘Figure showing creating commits on a branch. From left to right: a repository with two commits on the main branch and one on a feature branch, followed by an arrow with the text "git commit (x2)", followed by the same repository with to additional commits on the feature branch. A star is used on each diagram to show where you are in the repository, each on the last commit on the feature branch.’</p>
+<figure><img src="fig/branches/commit_branch.png" style="width:75.0%" alt='Figure showing creating commits on a branch. From left to right: a repository with two commits on the main branch and one on a feature branch, followed by an arrow with the text "git commit (x2)", followed by the same repository with to additional commits on the feature branch. A star is used on each diagram to show where you are in the repository, each on the last commit on the feature branch.' class="figure mx-auto d-block"><div class="figcaption">Every time you run the <code>git commit</code>
+command the commit will be added to your current branch.</div>
+</figure><hr>
 <h3 id="branches-figure-4">Figure 4</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/branches/checkout_branch.png" style="width:85.0%" alt="" class="figure"><em>Switching branches using
-<code>git checkout</code>.</em></p>
-<hr>
+<p aria-hidden="true">Image 1 of 1: ‘Figure showing The process of changing, or checking out a branch. From left to right: a repository with two commits on the main branch and three on the feature branch with current location on the third commit of the feature branch, followed by an arrow with the text "git checkout main”, followed by the same repository with the current location now on the second commit in the main branch.’</p>
+<figure><img src="fig/branches/checkout_branch.png" style="width:85.0%" alt='Figure showing The process of changing, or checking out a branch. From left to right: a repository with two commits on the main branch and three on the feature branch with current location on the third commit of the feature branch, followed by an arrow with the text "git checkout main”, followed by the same repository with the current location now on the second commit in the main branch.' class="figure mx-auto d-block"><div class="figcaption">Switching branches using
+<code>git checkout</code>.</div>
+</figure><hr>
 <h3 id="branches-figure-5">Figure 5</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/branches/merge_into_branch.png" style="width:60.0%" alt="" class="figure"><em>Merging new commits from the main branch into the feature
-branch with <code>git merge main</code>.</em></p>
-<hr>
+<p aria-hidden="true">Image 1 of 1: ‘Figure showing the process of merging the main branch into the feature branch. On the top is a repository with a main and feature branch. The feature branch starts at the second commit on the main branch and has three commits, and the main branch has an additional two commits after the split. The current location is the third commit of the feature branch. Below is an arrow with the text "git merge main" followed by the same repository with a new arrow from the last commit on the main branch to a new commit on the feature branch, showing the changes from the main branch have been merged into the changes on the feature branch.’</p>
+<figure><img src="fig/branches/merge_into_branch.png" style="width:60.0%" alt='Figure showing the process of merging the main branch into the feature branch. On the top is a repository with a main and feature branch. The feature branch starts at the second commit on the main branch and has three commits, and the main branch has an additional two commits after the split. The current location is the third commit of the feature branch. Below is an arrow with the text "git merge main" followed by the same repository with a new arrow from the last commit on the main branch to a new commit on the feature branch, showing the changes from the main branch have been merged into the changes on the feature branch.' class="figure mx-auto d-block"><div class="figcaption">Merging new commits from the main branch into
+the feature branch with <code>git merge main</code>.</div>
+</figure><hr>
 <h3 id="branches-figure-6">Figure 6</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/branches/merge_into_main.png" style="width:50.0%" alt="" class="figure"><em>Merging new commits the feature branch into the main
-branch with <code>git merge my_branch</code>.</em></p>
-<hr>
+<p aria-hidden="true">Image 1 of 1: ‘Figure showing the process of merging the feature branch into the main branch. On the top is a repository with a main and feature branch. The feature branch starts at the second commit on the main branch and has three commits. The current location is on the second commit of the main branch. Below is an arrow with the text "git merge my_branch" followed by the same repository with a new commit on the main branch that has two incoming arrows from the main and feature branches, showing the changes from the feature branch have been merged into main branch.’</p>
+<figure><img src="fig/branches/merge_into_main.png" style="width:50.0%" alt='Figure showing the process of merging the feature branch into the main branch. On the top is a repository with a main and feature branch. The feature branch starts at the second commit on the main branch and has three commits. The current location is on the second commit of the main branch. Below is an arrow with the text "git merge my_branch" followed by the same repository with a new commit on the main branch that has two incoming arrows from the main and feature branches, showing the changes from the feature branch have been merged into main branch.' class="figure mx-auto d-block"><div class="figcaption">Merging new commits the feature branch into the
+main branch with <code>git merge my_branch</code>.</div>
+</figure><hr>
 <h3 id="branches-figure-7">Figure 7</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/branches/rebase.png" style="width:50.0%" alt="" class="figure"><em>Rebasing the feature branch onto new commits in the main branch with
-<code>git rebase main</code>.</em></p>
-<hr></section><section id="pr"><h2 class="section-heading"><a href="pr.html">Pull Requests</a></h2>
+<p aria-hidden="true">Image 1 of 1: ‘Figure showing the process of rebasing the feature branch onto new commits in the main branch. On the top is a repository with a main and feature branch. The feature branch has three commits and starts from the second commit of the main branch, which has two additinal commits after the split. The current location is on the third commit of the feature branch. Below is an arrow with the text "git rebase main" followed by the same repository, but the feature branch now splits off the fourth and last commit of the main branch.’</p>
+<figure><img src="fig/branches/rebase.png" style="width:50.0%" alt='Figure showing the process of rebasing the feature branch onto new commits in the main branch. On the top is a repository with a main and feature branch. The feature branch has three commits and starts from the second commit of the main branch, which has two additinal commits after the split. The current location is on the third commit of the feature branch. Below is an arrow with the text "git rebase main" followed by the same repository, but the feature branch now splits off the fourth and last commit of the main branch.' class="figure mx-auto d-block"><div class="figcaption">Rebasing the feature branch onto new commits in
+the main branch with <code>git rebase main</code>.</div>
+</figure><hr></section><section id="pr"><h2 class="section-heading"><a href="pr.html">Pull Requests</a></h2>
 <hr class="half-width">
 <h3 id="pr-figure-1">Figure 1</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/pr/01_gotobranch.png" style="width:75.0%" alt="" class="figure"><em>Creating a Pull Request: If you recently pushed changes to your
-branch you may see a button that says “Compare and Pull Request” on
-GitHub.</em></p>
-<hr>
+<p aria-hidden="true">Image 1 of 1: ‘A screenshot of a repository on GitHub. A button with the text "Compare and Pull Request" is at the top fo the page.’</p>
+<figure><img src="fig/pr/01_gotobranch.png" style="width:75.0%" alt='A screenshot of a repository on GitHub. A button with the text "Compare and Pull Request" is at the top fo the page.' class="figure mx-auto d-block"><div class="figcaption">Creating a Pull Request: If you recently pushed
+changes to your branch you may see a button that says “Compare and Pull
+Request” on GitHub.</div>
+</figure><hr>
 <h3 id="pr-figure-2">Figure 2</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/pr/02_createpr.png" style="width:75.0%" alt="" class="figure"><em>Creating a Pull Request: Give your Pull Request a title and
-description.</em></p>
-<hr>
+<p aria-hidden="true">Image 1 of 1: ‘A screenshot of a Pull Request form on GitHub.The title and description are filled out.’</p>
+<figure><img src="fig/pr/02_createpr.png" style="width:75.0%" alt="A screenshot of a Pull Request form on GitHub.The title and description are filled out." class="figure mx-auto d-block"><div class="figcaption">Creating a Pull Request: Give your Pull Request
+a title and description.</div>
+</figure><hr>
 <h3 id="pr-figure-3">Figure 3</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/pr/03_conversation.png" style="width:75.0%" alt="" class="figure"><em>The conversation tab of a Pull Request.</em></p>
-<hr>
+<p aria-hidden="true">Image 1 of 1: ‘A screenshot of the conversation tab of a Pull Request.’</p>
+<figure><img src="fig/pr/03_conversation.png" style="width:75.0%" alt="A screenshot of the conversation tab of a Pull Request." class="figure mx-auto d-block"><div class="figcaption">The conversation tab of a Pull Request.</div>
+</figure><hr>
 <h3 id="pr-figure-4">Figure 4</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/pr/04_comment.png" style="width:75.0%" alt="" class="figure"><em>The conversation tab of a Pull Request. Scroll to the bottom of the
-page to leave a comment.</em></p>
-<hr>
+<p aria-hidden="true">Image 1 of 1: ‘A screenshot of the bottom of the conversation tab of a Pull Request. At the bottom of the page is a box to leave a comment.’</p>
+<figure><img src="fig/pr/04_comment.png" style="width:75.0%" alt="A screenshot of the bottom of the conversation tab of a Pull Request. At the bottom of the page is a box to leave a comment." class="figure mx-auto d-block"><div class="figcaption">The conversation tab of a Pull Request. Scroll
+to the bottom of the page to leave a comment.</div>
+</figure><hr>
 <h3 id="pr-figure-5">Figure 5</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/pr/04_comment.png" style="width:75.0%" alt="" class="figure"><em>The Files Changed tab of a Pull Request, showing what the proposed
-changes are for the Pull Request. You can click the + next to a line
-number to leave an in-line comment.</em></p>
-<hr>
+<p aria-hidden="true">Image 1 of 1: ‘A screenshot of the Commits tab of a Pull Request. The page shows the single commit in this pull request.’</p>
+<figure><img src="fig/pr/05_commits.png" style="width:75.0%" alt="A screenshot of the Commits tab of a Pull Request. The page shows the single commit in this pull request." class="figure mx-auto d-block"><div class="figcaption">The commits tab of a Pull Request.</div>
+</figure><hr>
 <h3 id="pr-figure-6">Figure 6</h3>
-<p aria-hidden="true">Image 1 of 1: ‘[decorative]’</p>
-<p><img src="fig/pr/07_merge.png" style="width:75.0%" alt="" class="figure"><em>After clicking the “Merge Pull Request” button on the conversation,
-click “Confirm Merge” to merge the pull request.</em></p>
-<hr></section><section id="git-workflows"><h2 class="section-heading"><a href="git-workflows.html">Git Workflows</a></h2>
+<p aria-hidden="true">Image 1 of 1: ‘A screenshot of the Files Changed tab of a Pull Request. The page shows one line of code has been updated.’</p>
+<figure><img src="fig/pr/06_fileschanged.png" style="width:75.0%" alt="A screenshot of the Files Changed tab of a Pull Request. The page shows one line of code has been updated." class="figure mx-auto d-block"><div class="figcaption">The Files Changed tab of a Pull Request, showing
+what the proposed changes are for the Pull Request. You can click the +
+next to a line number to leave an in-line comment.</div>
+</figure><hr>
+<h3 id="pr-figure-7">Figure 7</h3>
+<p aria-hidden="true">Image 1 of 1: ‘A screenshot of the Conversation tab of a pull request on GitHub. This page shows additional commits added after the pull request was created along with their commit messages in a top-to-bottom timeline.’</p>
+<figure><img src="fig/pr/10_updates.png" style="width:75.0%" alt="A screenshot of the Conversation tab of a pull request on GitHub. This page shows additional commits added after the pull request was created along with their commit messages in a top-to-bottom timeline." class="figure mx-auto d-block"><div class="figcaption">New commits can be seen on the Conversation
+Tab.</div>
+</figure><hr>
+<h3 id="pr-figure-8">Figure 8</h3>
+<p aria-hidden="true">Image 1 of 1: ‘A screenshot of the bottom of the conversation tab of a Pull Request after clicking "Merge Pull Request". There is a box with the original Pull Request title and description, with a button that says "Confirm Merge" below that.’</p>
+<figure><img src="fig/pr/07_merge.png" style="width:75.0%" alt='A screenshot of the bottom of the conversation tab of a Pull Request after clicking "Merge Pull Request". There is a box with the original Pull Request title and description, with a button that says "Confirm Merge" below that.' class="figure mx-auto d-block"><div class="figcaption">After clicking the “Merge Pull Request” button
+on the conversation, click “Confirm Merge” to merge the pull
+request.</div>
+</figure><hr></section><section id="git-workflows"><h2 class="section-heading"><a href="git-workflows.html">Git Workflows</a></h2>
 <hr class="half-width"></section>
 </div>
     </main>
@@ -466,9 +476,9 @@ click “Confirm Merge” to merge the pull request.</em></p>
   "creativeWorkStatus": "active",
   "url": "https://INTERSECT-training.github.io/collaborative-git/images.html",
   "identifier": "https://INTERSECT-training.github.io/collaborative-git/images.html",
-  "dateCreated": "2025-06-16",
-  "dateModified": "2025-07-08",
-  "datePublished": "2025-07-08"
+  "dateCreated": "2025-07-13",
+  "dateModified": "2025-07-13",
+  "datePublished": "2025-07-13"
 }
 
   </script><script>
