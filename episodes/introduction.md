@@ -31,6 +31,27 @@ In this lesson we will be briefly going over some more advanced git tools that b
 
 While technology helps, it is not the solution on its own. We will also discuss git workflows, which describe the strategy of how branches and pull requests should be used to stay organized and productive. We will show a few common workflows, and give general guidance on how to choose what will work well for your project and team.
 
+## AI Coding Agents and Git
+
+AI coding agents can be used to be more productive than we could be on our own. Working in a git repository will make your AI coding agent even more productive. In a git repository it has the context of the history of the code and can see how it has evolved over time. It can look at file diffs (what has changed between versions), which is helpful for context and can help you write commit messages. Testing can be more efficient because your agent can more easily compare the results of the current version with the previous version.
+
+It is therefore just as important to have good version control and git practices, whether you are working with AI agents, human collaborators, both, or neither. AI agents can help: it can run git commands for you, write commit messages, and even make and review pull requests. You will, however, have to instruct your agent to do these things and so it is even more important for you to understand the process and know the best practices so you can make sure these are being followed. You can and should include these in your agent configuration files (CLAUDE.md, AGENTS.md, copilot-instructions.md), but be aware that your agent treats these as context, rather than rules to follow.
+
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Agent Configuration Files
+
+To test the use of agent configuration files, I made a CLAUDE.md file in my repository, listing out the git best practices that I try to follow. I was disappointed to find that these were mostly ignored, even with a short CLAUDE.md file. The following was from a conversation with Claude where I asked why this was happening.
+
+> **Question**: The advice is to add a CLAUDE.md file to repositories so agents know how you like to work in the repo. But every time I try to test it with a new feature Claude ignores it and instead starts working. Is there something I am doing wrong?
+
+> **Answer**: Nothing wrong on your end — this is a known gap. CLAUDE.md gets read as background context during exploration (it's just another file among several I read to understand the codebase), so its prose gets absorbed as "useful info" rather than treated as a mandatory gate that has to fire before the first edit. Imperative instructions buried in markdown compete with everything else in context, and "read the rules" and "act on the rules" aren't the same event to me unless something forces the connection — which is exactly what happened here: I read the workflow section, then went straight to editing files without treating it as a checklist to execute.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
+## Review
+
 Before diving in, we should review some basic terminology and commands. Note that while other options are available, we are focusing on GitHub for this lesson.
 
 - *repository (repo)*: The project, contains all data and history (commits, branches, tags).
@@ -45,6 +66,15 @@ Before diving in, we should review some basic terminology and commands. Note tha
 - *push*: Bring changes from your local repository to the remote repository.
 
 These definitions are adapted from [Code Refinery: Concepts around Collaboration](https://coderefinery.github.io/git-collaborative/concepts/).
+
+To use git and GitHub independently, we expect that you might follow this basic pattern:
+
+0. Clone the repository with `git clone URL`. You can retrieve the URL for the repository you will be working in by going to its page on GitHub. Click the green "Code" button and copy the URL that is displayed. You only need to do this once.
+1. Make the changes you need to make (we will talk about branching in the next section).
+2. Commit your changes. This takes two steps:
+    1. `git add filename`: specify which files you'd like to include in the commit. Run `git status` for a reminder of what files have changed.
+    2. `git commit -m "Commit message"`: make the commit. Include a short but descriptive commit message.
+3. Push your changes to the remote repository with `git push`.
 
 A note about git integrations: You may find that your IDE has git built in allowing you to use the GUI instead of running the commands we talk about here. In this lesson we are focusing on the command line git commands, since they should be universal across any system you use. After this lesson we encourage you to use what you are most comfortable with, and the commands we cover will also help you better understand the functionality of your IDE git integration.
 
