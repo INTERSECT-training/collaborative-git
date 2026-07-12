@@ -70,11 +70,13 @@ These definitions are adapted from [Code Refinery: Concepts around Collaboration
 To use git and GitHub independently, we expect that you might follow this basic pattern:
 
 0. Clone the repository with `git clone URL`. You can retrieve the URL for the repository you will be working in by going to its page on GitHub. Click the green "Code" button and copy the URL that is displayed. You only need to do this once.
-1. Make the changes you need to make (we will talk about branching in the next section).
-2. Commit your changes. This takes two steps:
+1. If you cloned the repository previously run `git pull`.
+2. Make the changes you need to make (we will talk about branching in the next section).
+3. Commit your changes. This takes two steps:
     1. `git add filename`: specify which files you'd like to include in the commit. Run `git status` for a reminder of what files have changed.
     2. `git commit -m "Commit message"`: make the commit. Include a short but descriptive commit message.
-3. Push your changes to the remote repository with `git push`.
+4. Push your changes to the remote repository with `git push`.
+5. Repeat steps 2-4 as needed.
 
 A note about git integrations: You may find that your IDE has git built in allowing you to use the GUI instead of running the commands we talk about here. In this lesson we are focusing on the command line git commands, since they should be universal across any system you use. After this lesson we encourage you to use what you are most comfortable with, and the commands we cover will also help you better understand the functionality of your IDE git integration.
 
