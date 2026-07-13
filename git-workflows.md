@@ -95,6 +95,15 @@ Using remotes, fetching and merging upstream changes frequently, and running com
 
 Now that you've chosen a workflow for your project, how do you communicate it? This is most often done with a CONTRIBUTING document. The CONTRIBUTING document describes the git workflow you are using, any conventions for branch naming that you have, and anything else a collaborator should know in order to contribute. It should be tailored to your project and team, and so it might also include how to run the tests for the project, requirements before creating Pull Requests, or perhaps detailed instructions for how follow the workflow if your team is less familiar with git. One of the goals of a CONTRIBUTING document is to lower the barrier to entry to contributing to a project and a good one will encourage collaboration.
 
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## AI Agent Configuration Files
+
+If your group is using AI Coding agents you should also include an Agent configuration file in your repository, such as [AGENTS.md](https://agents.md/), [CLAUDE.md](https://code.claude.com/docs/en/memory), or [copilot-instructions.md](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions). Work with your team to tailor this file to your project. Include in the file that you are following the guidelines in the CONTRIBUTING document.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
+
 ## Enforcing your Workflow
 
 There are tools that you can use to make sure everyone follows the agreed upon workflow, which can make it easier to collaborate with others. First, you can add branch protections, which will enforce certain rules for certain branches. A common one is to not allow commits directly to the main branch, requiring changes to go through a Pull Request. There are many options for branch protection that you can read about on the [GitHub web page](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches). Similarly, you can limit who on the team is able to push or merge changes into a particular branch, or in the entire repository. It is also a good idea to have testing and review requirements, particularly for production branches. These requirements and branch protections should be documented in the CONTRIBUTING document as well.
