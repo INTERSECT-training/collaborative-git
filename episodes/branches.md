@@ -62,6 +62,14 @@ git push --set-upstream origin my_new_branch
 
 After this any commits can be pushed with a simple `git push`.
 
+::::::::::::::::::::::::::::::::::::::::::  callout
+
+## Naming Branches
+
+Use short, descriptive names for your branches. Follow any branch naming conventions that your group has established.
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::
+
 ### Changing Branches
 
 If you need to switch to another existing branch you can use the `git checkout` command. For example, to switch back to the main branch you can run:
@@ -98,6 +106,32 @@ git merge my_new_branch
 ![Merging new commits the feature branch into the main branch with `git merge my_branch`.](../fig/branches/merge_into_main.png){alt='Figure showing the process of merging the feature branch into the main branch. On the top is a repository with a main and feature branch. The feature branch starts at the second commit on the main branch and has three commits. The current location is on the second commit of the main branch. Below is an arrow with the text "git merge my_branch" followed by the same repository with a new commit on the main branch that has two incoming arrows from the main and feature branches, showing the changes from the feature branch have been merged into main branch.' width="50%"}
 
 Git will do its best to complete the merge automatically. For example, if none of the changes have happened in the same lines of code, things will usually merge cleanly. If the merge can't complete automatically, this is called a merge conflict. Any conflicts in the files must be resolved before the merge can be completed.
+
+### Using Branches
+
+In the Introduction we reviewed the basic git usage pattern that we usually start with when working independently. Let's add in these branching steps. The new steps are listed in bold.
+
+Let's assume we are working on a new feature or bug fix and have already cloned the repository.
+
+1. **Prepare to make changes:**
+    1. **Run `git status` to make sure you are on the main branch and don't have any uncommitted edits. Take care of anything left behind and return to the main branch with `git checkout main` as needed.**
+    2. **Run `git pull` on the main branch to stay up to date with the remote repository. This helps avoid merge conflicts later.**
+2. **Create a new branch with `git checkout -b branch_name`. Follow any naming conventions used by your group.**
+3. Make the changes you need to make.
+4. Commit your changes. This takes two steps:
+    1. `git add filename`: specify which files you'd like to include in the commit. Run `git status` for a reminder of what files have changed.
+    2. `git commit -m "Commit message"`: make the commit. Include a short but descriptive commit message.
+5. Push your changes to the remote repository with `git push`. **Your first push on this branch will need an additional flag: `git push --set-upstream origin my_new_branch`**
+6. Repeat steps 3-5 as needed.
+7. **If any changes have been introduced to main, merge those into your branch with:**
+```bash
+git checkout main
+git pull
+git checkout branch_name
+git merge main
+```
+8. **Merge your branch as needed. We will expand on this in the next two sections.**
+
 
 ## Merge vs Rebase
 
