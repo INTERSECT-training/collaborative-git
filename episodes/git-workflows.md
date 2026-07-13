@@ -99,7 +99,7 @@ Now that you've chosen a workflow for your project, how do you communicate it? T
 
 ## AI Agent Configuration Files
 
-If your group is using AI Coding agents you should also include an Agent configuration file in your repository, such as [AGENTS.md](https://agents.md/), [CLAUDE.md](addlink), or [copilot-instructions.md](addlink). Work with your team to tailor this file to your project. Include in the file that you are following the guidelines in the CONTRIBUTING document.
+If your group is using AI Coding agents you should also include an Agent configuration file in your repository, such as [AGENTS.md](https://agents.md/), [CLAUDE.md](https://code.claude.com/docs/en/memory), or [copilot-instructions.md](https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions). Work with your team to tailor this file to your project. Include in the file that you are following the guidelines in the CONTRIBUTING document.
 
 :::::::::::::::::::::::::::::::::::::::::::::::::::
 
