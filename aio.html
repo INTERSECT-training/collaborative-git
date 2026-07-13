@@ -345,7 +345,7 @@
         
 <section id="aio-introduction"><p>Content from <a href="introduction.html">Introduction</a></p>
 <hr>
-<p>Last updated on 2025-06-16 |
+<p>Last updated on 2026-07-13 |
 
         <a href="https://github.com/INTERSECT-training/collaborative-git/edit/main/episodes/introduction.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -408,6 +408,64 @@ also discuss git workflows, which describe the strategy of how branches
 and pull requests should be used to stay organized and productive. We
 will show a few common workflows, and give general guidance on how to
 choose what will work well for your project and team.</p>
+<section><h2 class="section-heading" id="ai-coding-agents-and-git">AI Coding Agents and Git<a class="anchor" aria-label="anchor" href="#ai-coding-agents-and-git"></a>
+</h2>
+<hr class="half-width">
+<p>AI coding agents can be used to be more productive than we could be
+on our own. Working in a git repository will make your AI coding agent
+even more productive. In a git repository it has the context of the
+history of the code and can see how it has evolved over time. It can
+look at file diffs (what has changed between versions), which is helpful
+for context and can help you write commit messages. Testing can be more
+efficient because your agent can more easily compare the results of the
+current version with the previous version.</p>
+<p>It is therefore just as important to have good version control and
+git practices, whether you are working with AI agents, human
+collaborators, both, or neither. AI agents can help: it can run git
+commands for you, write commit messages, and even make and review pull
+requests. You will, however, have to instruct your agent to do these
+things and so it is even more important for you to understand the
+process and know the best practices so you can make sure these are being
+followed. You can and should include these in your agent configuration
+files (CLAUDE.md, AGENTS.md, copilot-instructions.md), but be aware that
+your agent treats these as context, rather than rules to follow.</p>
+<div id="agent-configuration-files" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="agent-configuration-files" class="callout-inner">
+<h3 class="callout-title">Agent Configuration Files</h3>
+<div class="callout-content">
+<p>To test the use of agent configuration files, I made a CLAUDE.md file
+in my repository, listing out the git best practices that I try to
+follow. I was disappointed to find that these were mostly ignored, even
+with a short CLAUDE.md file. The following was from a conversation with
+Claude where I asked why this was happening.</p>
+<blockquote>
+<p><strong>Question</strong>: The advice is to add a CLAUDE.md file to
+repositories so agents know how you like to work in the repo. But every
+time I try to test it with a new feature Claude ignores it and instead
+starts working. Is there something I am doing wrong?</p>
+</blockquote>
+<blockquote>
+<p><strong>Answer</strong>: Nothing wrong on your end — this is a known
+gap. CLAUDE.md gets read as background context during exploration (it’s
+just another file among several I read to understand the codebase), so
+its prose gets absorbed as “useful info” rather than treated as a
+mandatory gate that has to fire before the first edit. Imperative
+instructions buried in markdown compete with everything else in context,
+and “read the rules” and “act on the rules” aren’t the same event to me
+unless something forces the connection — which is exactly what happened
+here: I read the workflow section, then went straight to editing files
+without treating it as a checklist to execute.</p>
+</blockquote>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="review">Review<a class="anchor" aria-label="anchor" href="#review"></a>
+</h2>
+<hr class="half-width">
 <p>Before diving in, we should review some basic terminology and
 commands. Note that while other options are available, we are focusing
 on GitHub for this lesson.</p>
@@ -452,6 +510,32 @@ remote repository.</li>
 </ul>
 <p>These definitions are adapted from <a href="https://coderefinery.github.io/git-collaborative/concepts/" class="external-link">Code
 Refinery: Concepts around Collaboration</a>.</p>
+<p>To use git and GitHub independently, we expect that you might follow
+this basic pattern:</p>
+<ol start="0" style="list-style-type: decimal">
+<li>Clone the repository with <code>git clone URL</code>. You can
+retrieve the URL for the repository you will be working in by going to
+its page on GitHub. Click the green “Code” button and copy the URL that
+is displayed. You only need to do this once.</li>
+<li>If you cloned the repository previously run
+<code>git pull</code>.</li>
+<li>Make the changes you need to make (we will talk about branching in
+the next section).</li>
+<li>Commit your changes. This takes two steps:
+<ol style="list-style-type: decimal">
+<li>
+<code>git add filename</code>: specify which files you’d like to
+include in the commit. Run <code>git status</code> for a reminder of
+what files have changed.</li>
+<li>
+<code>git commit -m "Commit message"</code>: make the commit.
+Include a short but descriptive commit message.</li>
+</ol>
+</li>
+<li>Push your changes to the remote repository with
+<code>git push</code>.</li>
+<li>Repeat steps 2-4 as needed.</li>
+</ol>
 <p>A note about git integrations: You may find that your IDE has git
 built in allowing you to use the GUI instead of running the commands we
 talk about here. In this lesson we are focusing on the command line git
@@ -459,7 +543,7 @@ commands, since they should be universal across any system you use.
 After this lesson we encourage you to use what you are most comfortable
 with, and the commands we cover will also help you better understand the
 functionality of your IDE git integration.</p>
-<section><h2 class="section-heading" id="activity">Activity<a class="anchor" aria-label="anchor" href="#activity"></a>
+</section><section><h2 class="section-heading" id="activity">Activity<a class="anchor" aria-label="anchor" href="#activity"></a>
 </h2>
 <hr class="half-width">
 <p>Verify that you can access your GitHub account, have git installed on
@@ -511,7 +595,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-branches"><p>Content from <a href="branches.html">Branches</a></p>
 <hr>
-<p>Last updated on 2025-07-13 |
+<p>Last updated on 2026-07-13 |
 
         <a href="https://github.com/INTERSECT-training/collaborative-git/edit/main/episodes/branches.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -598,6 +682,19 @@ will need to publish the branch by running run:</p>
 <pre class="shell"><code>git push --set-upstream origin my_new_branch</code></pre>
 <p>After this any commits can be pushed with a simple
 <code>git push</code>.</p>
+<div id="naming-branches" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="naming-branches" class="callout-inner">
+<h3 class="callout-title">Naming Branches</h3>
+<div class="callout-content">
+<p>Use short, descriptive names for your branches. Follow any branch
+naming conventions that your group has established.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="changing-branches">Changing Branches<a class="anchor" aria-label="anchor" href="#changing-branches"></a>
@@ -641,6 +738,64 @@ example, if none of the changes have happened in the same lines of code,
 things will usually merge cleanly. If the merge can’t complete
 automatically, this is called a merge conflict. Any conflicts in the
 files must be resolved before the merge can be completed.</p>
+</div>
+<div class="section level3">
+<h3 id="using-branches">Using Branches<a class="anchor" aria-label="anchor" href="#using-branches"></a>
+</h3>
+<p>In the Introduction we reviewed the basic git usage pattern that we
+usually start with when working independently. Let’s add in these
+branching steps. The new steps are listed in bold.</p>
+<p>Let’s assume we are working on a new feature or bug fix and have
+already cloned the repository.</p>
+<ol style="list-style-type: decimal">
+<li>
+<strong>Prepare to make changes:</strong>
+<ol style="list-style-type: decimal">
+<li><strong>Run <code>git status</code> to make sure you are on the main
+branch and don’t have any uncommitted edits. Take care of anything left
+behind and return to the main branch with <code>git checkout main</code>
+as needed.</strong></li>
+<li><strong>Run <code>git pull</code> on the main branch to stay up to
+date with the remote repository. This helps avoid merge conflicts
+later.</strong></li>
+</ol>
+</li>
+<li><strong>Create a new branch with
+<code>git checkout -b branch_name</code>. Follow any naming conventions
+used by your group.</strong></li>
+<li>Make the changes you need to make.</li>
+<li>Commit your changes. This takes two steps:
+<ol style="list-style-type: decimal">
+<li>
+<code>git add filename</code>: specify which files you’d like to
+include in the commit. Run <code>git status</code> for a reminder of
+what files have changed.</li>
+<li>
+<code>git commit -m "Commit message"</code>: make the commit.
+Include a short but descriptive commit message.</li>
+</ol>
+</li>
+<li>Push your changes to the remote repository with
+<code>git push</code>. <strong>Your first push on this branch will need
+an additional flag:
+<code>git push --set-upstream origin my_new_branch</code></strong>
+</li>
+<li>Repeat steps 3-5 as needed.</li>
+<li><strong>If any changes have been introduced to main, merge those
+into your branch with:</strong></li>
+</ol>
+<div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1" aria-label="code-block-7-2"></a><span class="fu">git</span> pull</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1" aria-label="code-block-7-3"></a><span class="fu">git</span> checkout branch_name</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1" aria-label="code-block-7-4"></a><span class="fu">git</span> merge main</span></code></pre>
+</div>
+<ol start="8" style="list-style-type: decimal">
+<li><strong>Merge your branch as needed. We will expand on this in the
+next two sections.</strong></li>
+</ol>
 </div>
 </section><section><h2 class="section-heading" id="merge-vs-rebase">Merge vs Rebase<a class="anchor" aria-label="anchor" href="#merge-vs-rebase"></a>
 </h2>
@@ -913,7 +1068,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-git-workflows"><p>Content from <a href="git-workflows.html">Git Workflows</a></p>
 <hr>
-<p>Last updated on 2025-06-16 |
+<p>Last updated on 2026-07-13 |
 
         <a href="https://github.com/INTERSECT-training/collaborative-git/edit/main/episodes/git-workflows.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1133,6 +1288,22 @@ perhaps detailed instructions for how follow the workflow if your team
 is less familiar with git. One of the goals of a CONTRIBUTING document
 is to lower the barrier to entry to contributing to a project and a good
 one will encourage collaboration.</p>
+<div id="ai-agent-configuration-files" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="ai-agent-configuration-files" class="callout-inner">
+<h3 class="callout-title">AI Agent Configuration Files</h3>
+<div class="callout-content">
+<p>If your group is using AI Coding agents you should also include an
+Agent configuration file in your repository, such as <a href="https://agents.md/" class="external-link">AGENTS.md</a>, <a href="https://code.claude.com/docs/en/memory" class="external-link">CLAUDE.md</a>, or <a href="https://docs.github.com/en/copilot/how-tos/copilot-on-github/customize-copilot/add-custom-instructions/add-repository-instructions" class="external-link">copilot-instructions.md</a>.
+Work with your team to tailor this file to your project. Include in the
+file that you are following the guidelines in the CONTRIBUTING
+document.</p>
+</div>
+</div>
+</div>
 </section><section><h2 class="section-heading" id="enforcing-your-workflow">Enforcing your Workflow<a class="anchor" aria-label="anchor" href="#enforcing-your-workflow"></a>
 </h2>
 <hr class="half-width">
@@ -1256,9 +1427,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://INTERSECT-training.github.io/collaborative-git/aio.html",
   "identifier": "https://INTERSECT-training.github.io/collaborative-git/aio.html",
-  "dateCreated": "2025-09-17",
-  "dateModified": "2026-07-07",
-  "datePublished": "2026-07-07"
+  "dateCreated": "2026-07-13",
+  "dateModified": "2026-07-13",
+  "datePublished": "2026-07-13"
 }
 
   </script><script>

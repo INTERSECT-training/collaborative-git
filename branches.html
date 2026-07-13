@@ -313,7 +313,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Branches</h1>
-        <p>Last updated on 2025-07-13 |
+        <p>Last updated on 2026-07-13 |
 
         <a href="https://github.com/INTERSECT-training/collaborative-git/edit/main/episodes/branches.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -397,6 +397,19 @@ will need to publish the branch by running run:</p>
 <pre class="shell"><code>git push --set-upstream origin my_new_branch</code></pre>
 <p>After this any commits can be pushed with a simple
 <code>git push</code>.</p>
+<div id="naming-branches" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div id="naming-branches" class="callout-inner">
+<h3 class="callout-title">Naming Branches</h3>
+<div class="callout-content">
+<p>Use short, descriptive names for your branches. Follow any branch
+naming conventions that your group has established.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="changing-branches">Changing Branches<a class="anchor" aria-label="anchor" href="#changing-branches"></a></h3>
@@ -438,6 +451,55 @@ things will usually merge cleanly. If the merge can’t complete
 automatically, this is called a merge conflict. Any conflicts in the
 files must be resolved before the merge can be completed.</p>
 </div>
+<div class="section level3">
+<h3 id="using-branches">Using Branches<a class="anchor" aria-label="anchor" href="#using-branches"></a></h3>
+<p>In the Introduction we reviewed the basic git usage pattern that we
+usually start with when working independently. Let’s add in these
+branching steps. The new steps are listed in bold.</p>
+<p>Let’s assume we are working on a new feature or bug fix and have
+already cloned the repository.</p>
+<ol style="list-style-type: decimal"><li>
+<strong>Prepare to make changes:</strong>
+<ol style="list-style-type: decimal"><li><strong>Run <code>git status</code> to make sure you are on the main
+branch and don’t have any uncommitted edits. Take care of anything left
+behind and return to the main branch with <code>git checkout main</code>
+as needed.</strong></li>
+<li><strong>Run <code>git pull</code> on the main branch to stay up to
+date with the remote repository. This helps avoid merge conflicts
+later.</strong></li>
+</ol></li>
+<li><strong>Create a new branch with
+<code>git checkout -b branch_name</code>. Follow any naming conventions
+used by your group.</strong></li>
+<li>Make the changes you need to make.</li>
+<li>Commit your changes. This takes two steps:
+<ol style="list-style-type: decimal"><li>
+<code>git add filename</code>: specify which files you’d like to
+include in the commit. Run <code>git status</code> for a reminder of
+what files have changed.</li>
+<li>
+<code>git commit -m "Commit message"</code>: make the commit.
+Include a short but descriptive commit message.</li>
+</ol></li>
+<li>Push your changes to the remote repository with
+<code>git push</code>. <strong>Your first push on this branch will need
+an additional flag:
+<code>git push --set-upstream origin my_new_branch</code></strong>
+</li>
+<li>Repeat steps 3-5 as needed.</li>
+<li><strong>If any changes have been introduced to main, merge those
+into your branch with:</strong></li>
+</ol><div class="codewrapper sourceCode" id="cb7">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a><span class="fu">git</span> checkout main</span>
+<span id="cb7-2"><a href="#cb7-2" tabindex="-1" aria-label="code-block-7-2"></a><span class="fu">git</span> pull</span>
+<span id="cb7-3"><a href="#cb7-3" tabindex="-1" aria-label="code-block-7-3"></a><span class="fu">git</span> checkout branch_name</span>
+<span id="cb7-4"><a href="#cb7-4" tabindex="-1" aria-label="code-block-7-4"></a><span class="fu">git</span> merge main</span></code></pre>
+</div>
+<ol start="8" style="list-style-type: decimal"><li><strong>Merge your branch as needed. We will expand on this in the
+next two sections.</strong></li>
+</ol></div>
 </section><section><h2 class="section-heading" id="merge-vs-rebase">Merge vs Rebase<a class="anchor" aria-label="anchor" href="#merge-vs-rebase"></a></h2>
 <hr class="half-width"><p>There is another way to introduce changes from one branch to another:
 rebasing. A rebase rewrites history. For example, if there are new
@@ -566,9 +628,9 @@ any links that you are not going to use.
   "creativeWorkStatus": "active",
   "url": "https://INTERSECT-training.github.io/collaborative-git/branches.html",
   "identifier": "https://INTERSECT-training.github.io/collaborative-git/branches.html",
-  "dateCreated": "2025-09-17",
-  "dateModified": "2025-07-13",
-  "datePublished": "2026-07-07"
+  "dateCreated": "2026-07-13",
+  "dateModified": "2026-07-13",
+  "datePublished": "2026-07-13"
 }
 
   </script><script>
